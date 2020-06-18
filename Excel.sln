@@ -7,13 +7,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{48709139-8D0
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{669BB168-C786-4C8E-9D9E-9E4CF2CE9271}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excel.WebApi", "Excel.WebApi\Excel.WebApi.csproj", "{6F3857E4-E198-4B28-BA1E-AB71D22C8E3C}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excel.Infrastructure", "Excel.Infrastructure\Excel.Infrastructure.csproj", "{BEE23522-4560-449C-B944-D52F3B1736A3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excel.Application", "Excel.Application\Excel.Application.csproj", "{2C428295-33B6-4455-BA12-7A601019A9B1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excel.Domain", "Excel.Domain\Excel.Domain.csproj", "{0A74C05A-E11F-4A4E-B813-E6CE22789ED7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excel.WebApi", "Excel.WebApi\Excel.WebApi.csproj", "{6F3857E4-E198-4B28-BA1E-AB71D22C8E3C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excel.Front", "Excel.Front\Excel.Front.csproj", "{EE4A0B63-F05A-4FB8-BB2C-C9B4DD6A7546}"
 EndProject

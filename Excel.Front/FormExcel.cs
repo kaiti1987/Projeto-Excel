@@ -176,6 +176,5 @@ namespace Excel.Front
             gdvOperations.Columns["Price"].HeaderText = "Preço";
             gdvOperations.Columns["Quantity"].HeaderText = "Quantidade";
         }
-
     }
 }

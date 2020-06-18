@@ -22,10 +22,12 @@ Após baixar o projeto, seguir os seguintes passos:
 </br></br>
 8- Aparecerá as opções para exportar nos seguintes formatos "Excel" e "CSV"
 ![alt text](https://github.com/kaiti1987/Excel/blob/master/Export.jpg?raw=true)
+</br></br>
 9- Após selecionar o formato, o arquivo será aberto automaticamente em seu computador
 </br></br>
 </br></br>
 Considerações no desenvolvimento:
+</br></br>
 a) Foi utilizado o pacote NPOI para geração de arquivos Excel por ser gratuito e não precisar instalar recusros do pacote Office (Interop).
 </br></br>
 b) Como foi um pré requisito o desenvolvimento de uma app desktop, foi utilizado Windows Form, devido a facilidade e a performance melhor em relação ao WPF.

@@ -1,0 +1,2 @@
+2020-06-18 14:00:08.458 -03:00 [INF] Inicio Processo - CreateFile
+2020-06-18 14:00:09.589 -03:00 [INF] Fim Processo - CreateFile

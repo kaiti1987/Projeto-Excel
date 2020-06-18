@@ -77,21 +77,21 @@ namespace Excel.Infrastructure.Service.Implementation
 
                 var row = sheet.CreateRow(initialRow);
 
-                var cell = row.CreateCell(0, CellType.String);
+                var cell = row.CreateCell(0, CellType.Numeric);
 
-                cell.SetCellValue(itemRow.AssetName);                
-                cell = row.CreateCell(1, CellType.Numeric);
-                cell.SetCellValue(itemRow.Quantity);
-                cell = row.CreateCell(2, CellType.Numeric);
-                cell.SetCellValue(itemRow.Price.ToString());
+                cell.SetCellValue(itemRow.Id);                        
+                cell = row.CreateCell(1, CellType.String);
+                cell.SetCellValue(itemRow.InclusionDate.ToString());                
+                cell = row.CreateCell(2, CellType.String);
+                cell.SetCellValue(itemRow.Type.GetDescription());                
                 cell = row.CreateCell(3, CellType.String);
-                cell.SetCellValue(itemRow.Type.GetDescription());
+                cell.SetCellValue(itemRow.AssetName);                
                 cell = row.CreateCell(4, CellType.Numeric);
-                cell.SetCellValue(itemRow.Account);
+                cell.SetCellValue(itemRow.Quantity);                
                 cell = row.CreateCell(5, CellType.Numeric);
-                cell.SetCellValue(itemRow.Id);
-                cell = row.CreateCell(6, CellType.String);
-                cell.SetCellValue(itemRow.InclusionDate.ToString());
+                cell.SetCellValue(itemRow.Price.ToString());
+                cell = row.CreateCell(6, CellType.Numeric);
+                cell.SetCellValue(itemRow.Account);
 
                 initialRow++;
             }

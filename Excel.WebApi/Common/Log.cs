@@ -12,7 +12,7 @@ namespace Excel.WebApi.Common
             var path = (new FileInfo(System.AppDomain.CurrentDomain.BaseDirectory).Directory.Parent.FullName);            
 
             _logger = new LoggerConfiguration()
-                          .WriteTo.File($"{path}/Logs/log-.txt", rollingInterval: RollingInterval.Day)
+                          .WriteTo.File($"{path}/Logs/log.txt", rollingInterval: RollingInterval.Day)
                           .CreateLogger();
         }
         

@@ -23,7 +23,7 @@ namespace Excel.Front
             catch (Exception)
             {
                 MessageBox.Show("Ocorreu um erro. Favor entrar em contato com o administrador");
-            }            
+            }
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -91,9 +91,21 @@ namespace Excel.Front
                     var operations = JsonConvert.DeserializeObject(readTask);
                     return operations ?? String.Empty;
                 }
+                else
+                {
+                    ShowErrorMessages(route);
+                }
 
                 return null;
             }
+        }
+
+        private void ShowErrorMessages(string route)
+        {
+            if (route.Equals("operation/file"))
+                MessageBox.Show("O arquivo Excel/CSV está em uso. Favor fechar para prosseguir com a geração de um novo relatório.");
+            else
+                MessageBox.Show("Falha ao consultar API. Favor entrar em contato com o administrador.");
         }
 
         private void LoadComboDisplayType()
@@ -121,6 +133,7 @@ namespace Excel.Front
             {
                 gdvOperations.Columns.Clear();
                 gdvOperations.DataSource = operations;
+                ConfigGridView();
 
                 if (!cboDisplayType.SelectedValue.Equals(4))
                 {
@@ -138,6 +151,7 @@ namespace Excel.Front
             {
                 gdvOperations.Columns["Type"].Visible = false;
                 gdvOperations.Columns["AssetName"].Visible = false;
+                gdvOperations.Columns["Account"].DisplayIndex = 0;
                 return;
             }
 
@@ -150,6 +164,17 @@ namespace Excel.Front
 
             gdvOperations.Columns["Account"].Visible = false;
             gdvOperations.Columns["AssetName"].Visible = false;
+        }
+
+        private void ConfigGridView()
+        {
+            gdvOperations.Columns["Id"].HeaderText = "Id";
+            gdvOperations.Columns["InclusionDate"].HeaderText = "Data";
+            gdvOperations.Columns["Type"].HeaderText = "Tipo";
+            gdvOperations.Columns["AssetName"].HeaderText = "Ativo";
+            gdvOperations.Columns["Account"].HeaderText = "Conta";
+            gdvOperations.Columns["Price"].HeaderText = "Preço";
+            gdvOperations.Columns["Quantity"].HeaderText = "Quantidade";
         }
 
     }

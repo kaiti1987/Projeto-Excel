@@ -20,7 +20,7 @@ Após baixar o projeto, seguir os seguintes passos:
 7- Selecionar o "Tipo de Visualização" e clicar em "Pesquisar"
 ![alt text](https://github.com/kaiti1987/Excel/blob/master/Pesquisar.jpg?raw=true)
 </br></br>
-8- Aparecerá as opções para exportar nos seguintes formatos "Excel" e "CSV"
+8- Aparecerão as opções para exportar nos seguintes formatos: "Excel" e "CSV"
 ![alt text](https://github.com/kaiti1987/Excel/blob/master/Export.jpg?raw=true)
 </br></br>
 9- Após selecionar o formato, o arquivo será aberto automaticamente em seu computador
@@ -28,9 +28,9 @@ Após baixar o projeto, seguir os seguintes passos:
 </br></br>
 Considerações no desenvolvimento:
 </br></br>
-a) Foi utilizado o pacote NPOI para geração de arquivos Excel, por ser gratuito e não precisar instalar recusros do pacote Office (Interop).
+a) Foi utilizado o pacote NPOI para geração de arquivos Excel, por ser gratuito e não precisar instalar recursos do pacote Office (Interop).
 </br></br>
-b) Como foi um pré requisito o desenvolvimento de uma app desktop, foi utilizado Windows Form, devido a facilidade e a performance melhor em relação ao WPF.
+b) Como foi um pré-requisito o desenvolvimento de uma app desktop, foi utilizado Windows Form, devido à facilidade e à melhor performance em relação ao WPF.
 </br></br>
 c) Para log foi utilizado o Serilog. Os logs são gravados em arquivo (diretório "Logs" na raiz do projeto). 
 
